@@ -1,4 +1,7 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local CeiraHub = Instance.new("Frame")
@@ -6,6 +9,7 @@ local Title = Instance.new("TextLabel")
 local SFrame = Instance.new("ScrollingFrame")
 local DaHood = Instance.new("TextButton")
 local BigPaintBallCash = Instance.new("TextButton")
+local Status = Instance.new("TextLabel")
 
 --Properties:
 
@@ -18,16 +22,18 @@ CeiraHub.Position = UDim2.new(0.636363685, 0, 0.156202152, 0)
 CeiraHub.Size = UDim2.new(0, 421, 0, 247)
 CeiraHub.Active = true
 CeiraHub.Draggable = true
+
 Title.Name = "Title"
 Title.Parent = CeiraHub
 Title.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
 Title.Size = UDim2.new(0, 421, 0, 50)
 Title.Font = Enum.Font.IndieFlower
-Title.Text = "CeiraHub"
+Title.Text = "CeiraHub :|"
 Title.TextColor3 = Color3.fromRGB(0, 0, 0)
 Title.TextScaled = true
 Title.TextSize = 14.000
 Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
 
 SFrame.Name = "SFrame"
 SFrame.Parent = CeiraHub
@@ -49,10 +55,9 @@ DaHood.TextSize = 14.000
 DaHood.TextWrapped = true
 DaHood.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Vanis252/valiant/main/.gitignore',true))()
-	
+
 	CeiraHub.Destroy()
 end)
-
 BigPaintBallCash.Name = "BigPaintBallCash"
 BigPaintBallCash.Parent = SFrame
 BigPaintBallCash.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
@@ -69,3 +74,16 @@ BigPaintBallCash.MouseButton1Down:connect(function()
 	wait(1)
 	BigPaintBallCash.Text = "BigPaintballCash"
 end)
+
+Status.Name = "Status"
+Status.Parent = CeiraHub
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0.368171036, 0, 0, 0)
+Status.Size = UDim2.new(0, 211, 0, 50)
+Status.Font = Enum.Font.IndieFlower
+Status.Text = "N / A"
+Status.TextColor3 = Color3.fromRGB(0, 0, 0)
+Status.TextSize = 30.000
+Status.TextWrapped = true
+Status.TextXAlignment = Enum.TextXAlignment.Left
