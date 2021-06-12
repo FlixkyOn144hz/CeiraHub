@@ -32,7 +32,7 @@ Title.TextWrapped = true
 SFrame.Name = "SFrame"
 SFrame.Parent = CeiraHub
 SFrame.Active = true
-SFrame.BackgroundColor3 = Color3.fromRGB(230, 41, 255)
+SFrame.BackgroundColor3 = Color3.fromRGB(119, 41, 255)
 SFrame.Position = UDim2.new(0, 0, 0.202429146, 0)
 SFrame.Size = UDim2.new(0, 421, 0, 197)
 
